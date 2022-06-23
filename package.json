@@ -1,6 +1,6 @@
 {
   "name": "azsub",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Azure CLI Subscription Switcher",
   "main": "main.js",
   "bin": {
