@@ -12,6 +12,8 @@ az account set --subscription <sub_name|sub_id>
 
 It's really not that bad, especially if you have azure cli completion installed, but this program just makes it one step easier.
 
+The implementation is very simple: all it does is read in your `~/.azure/azureProfile.json` file, changes which subscription is set to default, then writes it back to disk.
+
 ## Installation
 
 It may be installed globally from the npm repository:
