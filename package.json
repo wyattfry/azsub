@@ -1,6 +1,6 @@
 {
   "name": "azsub",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Azure CLI Subscription Switcher",
   "main": "main.js",
   "bin": {
@@ -9,7 +9,11 @@
   "scripts": {
     "start": "node main.js"
   },
-  "keywords": ["azure", "az", "azcli"],
+  "keywords": [
+    "azure",
+    "az",
+    "azcli"
+  ],
   "author": "Wyatt Fry",
   "type": "module",
   "license": "ISC",
