@@ -2,6 +2,7 @@
   "name": "azsub",
   "version": "1.0.2",
   "description": "Azure CLI Subscription Switcher",
+  "repository": "https://github.com/wyattfry/azsub",
   "main": "main.js",
   "bin": {
     "azsub": "main.js"
