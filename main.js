@@ -1,13 +1,12 @@
 #!/usr/bin/env node
 
-import fs from 'fs/promises'
 import yargs from 'yargs'
 import { hideBin } from 'yargs/helpers'
 import { Subscription, selectSub, setDefaultSub } from './subscription.js'
 import { getProfilePath, readAzureProfile } from './profile.js'
 
 async function main () {
-  const { description } = JSON.parse(await fs.readFile('package.json', 'utf8'))
+  const description = 'Azure CLI Subscription Switcher'
   const argv = yargs(hideBin(process.argv))
     .usage(description)
     .option('profile', {
