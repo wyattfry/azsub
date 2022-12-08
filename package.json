@@ -1,6 +1,6 @@
 {
   "name": "azsub",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Azure CLI Subscription Switcher",
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
   ],
   "author": "Wyatt Fry",
   "type": "module",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "fuzzy": "^0.1.3",
     "inquirer": "^8.0.0",

@@ -1,9 +1,9 @@
 import fs from 'fs/promises'
 import path from 'path'
+import homedir from 'os'
 
 export function getProfilePath () {
-  const userHome = process.env[(process.platform === 'win32') ? 'USERPROFILE' : 'HOME']
-  return path.join(userHome, '.azure', 'azureProfile.json')
+  return path.join(homedir(), '.azure', 'azureProfile.json')
 }
 
 export async function readAzureProfile (profile) {
