@@ -1,12 +1,17 @@
 import fs from 'fs/promises'
 import path from 'path'
-import homedir from 'os'
 
-export function getProfilePath () {
-  return path.join(homedir(), '.azure', 'azureProfile.json')
+function getUserHome() {
+  // os.homedir() stopped working ?? not a function it says
+  return process.env[(process.platform ==
+    'win32') ? 'USERPROFILE' : 'HOME'];
 }
 
-export async function readAzureProfile (profile) {
+export function getProfilePath() {
+  return path.join(getUserHome(), '.azure', 'azureProfile.json')
+}
+
+export async function readAzureProfile(profile) {
   const profilePath = profile || getProfilePath()
   let profBytes
   try {
